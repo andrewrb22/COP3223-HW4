@@ -1,16 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
-int x = 1;
+int main()
+{
+    int number, i;
 
-do {
-    printf("Hello\n");
-    x = x + 3;
-} while (x < 5);
+    printf("Enter a natural number: ");
+    scanf("%d", &number);
 
- printf("Done");
+    for (i = 1; i <= 10; i++)
+    {
+        printf("%d x %d = %d\n", number, i, number * i);
+    }
+    printf("\nDone");
 
     return 0;
-
 }
