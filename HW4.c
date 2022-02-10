@@ -20,7 +20,7 @@ int main()
         do
         {
             if (firstNumber != 0)
-                printf("\n Sorry invalid characte.. options are Y/N or y/n \n");
+                printf("\n Sorry invalid character... Options are:  Y/N or y/n \n");
 
             printf("\nDo you want to try a new number (Y/N): ");
             scanf(" %c", &again);
