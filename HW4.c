@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 int main(){
-int x = 3;
+int x;
 
-while ( x <= 5) {
+for ( x = 1 ; x <= 5; ++x) {
     printf("hello\n");
-    ++x;
+
 }
  printf("Done");
     return 0;
