@@ -5,7 +5,7 @@ int main()
 {
     int number, i;
     char again;
-    
+    int firstNumber = 0;
     do
     {
 
@@ -19,10 +19,14 @@ int main()
 
         do
         {
-            printf("Do you want to try a new number (Y/N): ");
-            scanf(" %c", &again);
+            if (firstNumber != 0)
+                printf("\n Sorry invalid characte.. options are Y/N or y/n \n");
 
-        }while (again != 'Y' && again != 'y' && again != 'n' && again != 'N');
+            printf("\nDo you want to try a new number (Y/N): ");
+            scanf(" %c", &again);
+            firstNumber = 1;
+
+        } while (again != 'Y' && again != 'y' && again != 'n' && again != 'N');
 
     } while (again == 'Y' || again == 'y');
 
