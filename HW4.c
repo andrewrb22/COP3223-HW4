@@ -2,13 +2,15 @@
 #include <stdlib.h>
 
 int main(){
-int x;
+int x = 1;
 
-for ( x = 1 ; x <= 5; ++x) {
-    printf("hello\n");
+do {
+    printf("Hello\n");
+    x = x + 3;
+} while (x < 5);
 
-}
  printf("Done");
+
     return 0;
 
 }
